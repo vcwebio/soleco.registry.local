@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+export CONTECO_LABEL="registry.local -SolEco"
+export CONTECO_DESCRIPTION="SolEco local registry solution."
+
+export CONTECO_TYPE="registry"
+export CONTECO_NAME="local"
+export CONTECO_TAG="v1.0.0"
+export CONTECO_TAG_TYPE="incremental"
+
+export CONTECO_BASE="image.wrapper"
+export CONTECO_BUILD="soleco"
