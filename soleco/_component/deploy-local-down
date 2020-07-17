@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 
-prefix="registry_$2"
-
 
 executionplane --silent docker container prune --force
 
@@ -17,7 +15,7 @@ do
 		sleep 3;
 	fi
 done;
-
+	
 continue="true"
 while [[ "true" == "$continue" ]] ;
 do
@@ -29,7 +27,7 @@ do
 		sleep 3;
 	fi
 done;
-
+	
 continue="true"
 while [[ "true" == "$continue" ]] ;
 do
