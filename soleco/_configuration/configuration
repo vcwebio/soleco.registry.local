@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+DOLLAR='$'
+export SOLECO_MODULE="registry.g1"
+
+export MODECO_CONFIGURATION_KEYS='\
+$MODECO_HOSTNAME,\
+$MODECO_MODULEPREFIX,\
+$MODECO_URLPREFIX,'
+export MODECO_CONFIGURATION_FILES="\
+metrics_monitor_heartbeat_monitors_volume/registry.yml"
+
+export MODECO_REGISTRY_REGISTRY_ENDPOINT_PORT="5001"
