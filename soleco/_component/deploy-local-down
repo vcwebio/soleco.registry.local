@@ -7,8 +7,8 @@ executionplane --silent docker container prune --force
 continue="true"
 while [[ "true" == "$continue" ]] ;
 do
-	executionplane docker volume rm "solution_registry_local_metrics_monitor_heartbeat_data_volume"
-	result=$(docker volume ls | grep "solution_registry_local_metrics_monitor_heartbeat_data_volume")
+	executionplane docker volume rm "registry_local_metrics_monitor_heartbeat_data_volume"
+	result=$(docker volume ls | grep "registry_local_metrics_monitor_heartbeat_data_volume")
 	if [[ "$result" == "" ]] ; then
 		continue="false"
 	else
@@ -19,8 +19,8 @@ done;
 continue="true"
 while [[ "true" == "$continue" ]] ;
 do
-	executionplane docker volume rm "solution_registry_local_metrics_monitor_heartbeat_monitors_volume"
-	result=$(docker volume ls | grep "solution_registry_local_metrics_monitor_heartbeat_monitors_volume")
+	executionplane docker volume rm "registry_local_metrics_monitor_heartbeat_monitors_volume"
+	result=$(docker volume ls | grep "registry_local_metrics_monitor_heartbeat_monitors_volume")
 	if [[ "$result" == "" ]] ; then
 		continue="false"
 	else
@@ -31,8 +31,8 @@ done;
 continue="true"
 while [[ "true" == "$continue" ]] ;
 do
-	executionplane docker volume rm "solution_registry_local_registry_registry_volume"
-	result=$(docker volume ls | grep "solution_registry_local_registry_registry_volume")
+	executionplane docker volume rm "registry_local_registry_registry_volume"
+	result=$(docker volume ls | grep "registry_local_registry_registry_volume")
 	if [[ "$result" == "" ]] ; then
 		continue="false"
 	else
