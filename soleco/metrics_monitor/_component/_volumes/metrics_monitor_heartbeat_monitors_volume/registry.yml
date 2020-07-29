@@ -1,7 +1,7 @@
 - type: http
   id: external_registry_endpoint
   name: External Registry Endpoint
-  hosts: ["http://${MODECO_HOSTNAME}:${MODECO_REGISTRY_REGISTRY_ENDPOINT_PORT}"]
+  hosts: ["http://lenovo.vcweb.iot:5000"]
   check.response.status: [200]
   schedule: '@every 30s'
   fields:
