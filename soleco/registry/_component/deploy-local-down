@@ -7,8 +7,8 @@ executionplane --silent docker container prune --force
 continue="true"
 while [[ "true" == "$continue" ]] ;
 do
-	executionplane docker volume rm "registry_local__registry_volume"
-	result=$(docker volume ls | grep "registry_local__registry_volume")
+	executionplane docker volume rm "registry_local_registry__registry_volume"
+	result=$(docker volume ls | grep "registry_local_registry__registry_volume")
 	if [[ "$result" == "" ]] ; then
 		continue="false"
 	else
